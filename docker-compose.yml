@@ -1,0 +1,9 @@
+services:
+  demo_image:
+    image: 'demo_image:latest'
+    build:
+      context: .
+    container_name: 'demo_quote'
+    ports:
+      - '8080:8080'
+    restart: always
